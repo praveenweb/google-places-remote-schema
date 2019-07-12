@@ -15,7 +15,7 @@ const resolvers = {
                 .then(body => {
                     const results = body.results;
                     const finalResults = results.map((item) => {
-                        const finalObj = {name: item.name, lat: lat, long: long, rating: item.rating, address: item.vicinity};
+                        const finalObj = {name: item.name, lat: lat, long: long, rating: item.rating, address: item.vicinity, location: location};
                         return finalObj;
                     });
                     return finalResults;

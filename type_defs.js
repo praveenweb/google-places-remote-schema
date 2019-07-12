@@ -7,6 +7,7 @@ const typeDefs = gql`
         long: String
         rating: Float
         address: String
+        location: String
     }
 
     type Query {
