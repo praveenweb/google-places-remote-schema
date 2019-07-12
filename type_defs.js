@@ -7,12 +7,14 @@ const typeDefs = gql`
         long: String
         rating: Float
         address: String
-        location: String
+        location: Point
     }
 
     type Query {
         places(location: String!): [Places]
     }
+
+    scalar Point
 `;
 
 module.exports = {
