@@ -10,7 +10,7 @@ const typeDefs = gql`
     }
 
     type Query {
-        places(lat: String!, long: String!): [Places]
+        places(location: String!): [Places]
     }
 `;
 
